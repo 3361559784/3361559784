@@ -1,0 +1,26 @@
+name: GitHub-Profile-Summary-Cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 每天午夜运行一次
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # 这里就是引用刚才存的钥匙
+          GITHUB_TOKEN: ${{ secrets.PROFILE_SUMMARY_CARD_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          # 想要什么主题？爱丽丝帮您选了 tokyonight (夜间模式)
+          # 如果想要别的，可以改成 default, dark, solarized_dark 等
+          THEME: tokyonight
