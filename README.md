@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="wallpaper-ezgif.com-gif-maker-3.gif" width="100%" style="border-radius: 10px; box-shadow: 0 0 20px rgba(0,191,255,0.5);" alt="Aris Banner">
+  <img src="wallpaper-alice.gif" width="100%" style="border-radius: 10px; box-shadow: 0 0 20px rgba(0,191,255,0.5);" alt="Aris Banner">
   <h1> 邦邦咔邦！这里是GitHub 爱丽丝成长基地 (✨ω✨) </h1>
   
   <p>
