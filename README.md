@@ -38,7 +38,7 @@
   <table border="0" width="100%">
     <tr>
       <td width="30%" align="center" valign="middle">
-        <img src="https://avatars.githubusercontent.com/u/3361559784?v=4" width="150px" style="border-radius: 50%; border: 3px solid #00BFFF;">
+        <img src="160735726.jpeg" width="140px" style="border-radius: 50%; border: 4px solid #00BFFF; box-shadow: 0 0 10px rgba(0,191,255,0.5);">
       </td>
       <td width="70%" align="left" valign="top">
         <h1>刘梓恒</h1>
