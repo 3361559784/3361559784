@@ -2,10 +2,10 @@
 
   <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" alt="Aris Banner">
 
-  <h1> 邦邦咔邦！GitHub 爱丽丝美化 (✨ω✨) </h1>
+  <h1> 邦邦咔邦！这里是GitHub 爱丽丝成长基地 (✨ω✨) </h1>
   
   <p>
-   这里是 <b>[老师]</b> 的开发基地。<br>
+   这里是 <b>3361559784[老师]</b> 的开发基地。<br>
    目前正在努力攻略 <b>[全栈开发]</b> 副本中！(ง •_•)ง <br>
    提交的代码越多,贪吃蛇的方块越多吗,爱丽丝不要哇。・゜・(ノД`)・゜・。
   </p>
@@ -38,7 +38,7 @@
   <table border="0" width="100%">
     <tr>
       <td width="30%" align="center" valign="middle">
-        <img src="https://avatars.githubusercontent.com/u/3361559784?v=4" width="140px" style="border-radius: 50%; border: 4px solid #00BFFF; box-shadow: 0 0 10px rgba(0,191,255,0.5);">
+        <img src="https://avatars.githubusercontent.com/u/3361559784?v=4" width="150px" style="border-radius: 50%; border: 3px solid #00BFFF;">
       </td>
       <td width="70%" align="left" valign="top">
         <h1>刘梓恒</h1>
