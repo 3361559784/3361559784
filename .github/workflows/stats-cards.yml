@@ -2,13 +2,14 @@ name: GitHub-Profile-Summary-Cards
 
 on:
   schedule:
-    - cron: "0 0 * * *" # 每天午夜运行一次
-  workflow_dispatch: # 允许手动触发
+    - cron: "0 0 * * *" # 每天半夜自动跑
+  workflow_dispatch:    # 允许手动点按钮跑
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-summary-cards
+    
     permissions:
       contents: write
     
@@ -16,6 +17,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - uses: vn7n24fzkq/github-profile-summary-cards@release
+      
         env:
           GITHUB_TOKEN: ${{ secrets.PROFILE_SUMMARY_CARD_TOKEN }}
         with:
