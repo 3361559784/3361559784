@@ -30,11 +30,11 @@ GitHub-Alice-Beautification
     <tr>
       <td valign="top" width="50%">
         <h3>📊 冒险者状态栏</h3>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=[你的GitHub用户名]&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&icon_color=00BFFF" />
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=[3361559784]&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&icon_color=00BFFF" />
       </td>
       <td valign="top" width="50%">
         <h3>🛠️ 技能熟练度</h3>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=[你的GitHub用户名]&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&langs_count=6" />
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=[3361559784]&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&langs_count=6" />
       </td>
     </tr>
   </table>
