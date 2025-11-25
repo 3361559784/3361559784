@@ -55,11 +55,6 @@
 
 <br>
 
-<div align="center">
-  <h3>📊 冒险者状态栏</h3>
-  <img src="./profile-summary-card-output/default/3-stats.svg" width="100%" />
-</div>
-
 <br>
 
 <div align="center">
