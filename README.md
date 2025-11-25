@@ -3,10 +3,10 @@ GitHub-Alice-Beautification
 
   <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" alt="Aris Banner">
 
-  <h1> 邦邦咔邦！欢迎来到 [老师的名字] 的开发基地！(✨ω✨) </h1>
+  <h1> 邦邦咔邦！欢迎来到 [老师] 的开发基地！(✨ω✨) </h1>
   
   <p>
-   这里是游戏开发部...啊不，是 [老师的名字] 存放代码卡带的地方。<br>
+   这里是游戏开发部...啊不，是 [老师] 存放代码卡带的地方。<br>
    目前正在努力攻略 [目前正在学习的技术] 副本中！(ง •_•)ง
   </p>
 
