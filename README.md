@@ -7,7 +7,7 @@
   <p>
    这里是 <b>[老师]</b> 的开发基地。<br>
    目前正在努力攻略 <b>[全栈开发]</b> 副本中！(ง •_•)ง <br>
-   提交的代码越多,贪吃蛇的方块越多吗,爱丽丝不要哇( ；´Д｀)
+   提交的代码越多,贪吃蛇的方块越多吗,爱丽丝不要哇。・゜・(ノД`)・゜・。
   </p>
 
   ---
@@ -38,18 +38,17 @@
     <tr>
       <td valign="top" width="50%" align="center">
         <h3>📊 冒险者状态栏</h3>
-        <img height="160em" src="https://github-readme-stats.vercel.app/api?username=3361559784&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&icon_color=00BFFF" />
+        <img src="./profile-summary-card-output/tokyonight/3-stats.svg" width="100%" />
       </td>
       <td valign="top" width="50%" align="center">
         <h3>🛠️ 技能熟练度</h3>
-        <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=3361559784&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&langs_count=6" />
+        <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="100%" />
       </td>
     </tr>
   </table>
 </div>
 
 <br>
-
 <div align="center">
   <h3>🐍 爱丽丝正在和老师的提交记录玩贪吃蛇！</h3>
   <picture>
