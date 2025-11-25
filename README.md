@@ -2,10 +2,10 @@
 
   <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" alt="Aris Banner">
 
-  <h1> 邦邦咔邦！欢迎来到 [老师] 的开发基地！(✨ω✨) </h1>
+  <h1> 邦邦咔邦！GitHub 爱丽丝美化 (✨ω✨) </h1>
   
   <p>
-   这里是游戏开发部...啊不，是 <b>[老师]</b> 存放代码卡带的地方。<br>
+   这里是 <b>[老师]</b> 的开发基地。<br>
    目前正在努力攻略 <b>[全栈开发]</b> 副本中！(ง •_•)ง
   </p>
 
@@ -52,9 +52,9 @@
 <div align="center">
   <h3>🐍 爱丽丝正在和老师的提交记录玩贪吃蛇！</h3>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/3361559784/3361559784@output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/3361559784/3361559784@output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://cdn.jsdelivr.net/gh/3361559784/3361559784@output/github-contribution-grid-snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/3361559784/3361559784/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/3361559784/3361559784/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/3361559784/3361559784/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
 
