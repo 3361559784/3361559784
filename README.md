@@ -38,11 +38,11 @@
     <tr>
       <td valign="top" width="50%" align="center">
         <h3>📊 冒险者状态栏</h3>
-        <img src="./profile-summary-card-output/tokyonight/3-stats.svg" width="100%" />
+        <img src="./profile-summary-card-output/default/3-stats.svg" width="100%" />
       </td>
       <td valign="top" width="50%" align="center">
-        <h3>🛠️ 技能熟练度</h3>
-        <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="100%" />
+        <h3>🆔 冒险者ID卡</h3>
+        <img src="./profile-summary-card-output/default/0-profile-details.svg" width="100%" />
       </td>
     </tr>
   </table>
