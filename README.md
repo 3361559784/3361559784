@@ -11,9 +11,16 @@
 
   ---
   
-  <img src="https://media.tenor.com/P60A6tUuWIEAAAAi/aris-dance-blue-archive.gif" width="120px">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=24&duration=2000&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=Initializing+Aris+System...%E2%96%88;Loading+Sensei's+Profile...%E2%96%88;Welcome+to+Game+Dev+Dept!%E2%96%88" alt="Typing SVG" />
+  </a>
   
   <br>
+
+  <img src="https://media.tenor.com/P60A6tUuWIEAAAAi/aris-dance-blue-archive.gif" width="100px">
+  
+  <br><br>
+
   <p>
     <img src="https://img.shields.io/badge/Unity-%23000000.svg?style=flat-square&logo=unity&logoColor=white" alt="Unity">
     <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=flat-square&logo=c-sharp&logoColor=white" alt="C#">
@@ -41,6 +48,17 @@
 </div>
 
 <br>
+
+<div align="center">
+  <h3>🐍 爱丽丝正在和老师的提交记录玩贪吃蛇！</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/3361559784/3361559784@output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/3361559784/3361559784@output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://cdn.jsdelivr.net/gh/3361559784/3361559784@output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
+
+---
 
 <div align="center">
   <p>
