@@ -2,10 +2,10 @@
 
   <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" alt="Aris Banner">
 
-  <h1> 邦邦咔邦！这是老师的GitHub 爱丽丝成长档案 (✨ω✨) </h1>
+  <h1> 邦邦咔邦！GitHub 爱丽丝美化 (✨ω✨) </h1>
   
   <p>
-   这里是 <b>3361559784</b> 的开发基地。<br>
+   这里是 <b>[老师]</b> 的开发基地。<br>
    目前正在努力攻略 <b>[全栈开发]</b> 副本中！(ง •_•)ง <br>
    提交的代码越多,贪吃蛇的方块越多吗,爱丽丝不要哇。・゜・(ノД`)・゜・。
   </p>
@@ -31,24 +31,37 @@
 
 </div>
 
----
+<br>
 
 <div align="center">
-  <table border="0">
+  <h3>🆔 冒险者ID卡</h3>
+  <table border="0" width="100%">
     <tr>
-      <td valign="top" width="50%" align="center">
-        <h3>📊 冒险者状态栏</h3>
-        <img src="./profile-summary-card-output/default/3-stats.svg" width="100%" />
+      <td width="30%" align="center" valign="middle">
+        <img src="https://avatars.githubusercontent.com/u/3361559784?v=4" width="140px" style="border-radius: 50%; border: 4px solid #00BFFF; box-shadow: 0 0 10px rgba(0,191,255,0.5);">
       </td>
-      <td valign="top" width="50%" align="center">
-        <h3>🆔 冒险者ID卡</h3>
-        <img src="./profile-summary-card-output/default/0-profile-details.svg" width="100%" />
+      <td width="70%" align="left" valign="top">
+        <h1>刘梓恒</h1>
+        <p><code>3361559784</code> · 他/他</p>
+        <p>Studying at Wuchang Institute of Technology</p>
+        <p>Highlights:</b> Developer Program Member | PRO</p>
       </td>
     </tr>
   </table>
+  
+  <br>
+  <img src="./profile-summary-card-output/default/0-profile-details.svg" width="100%" />
 </div>
 
 <br>
+
+<div align="center">
+  <h3>📊 冒险者状态栏</h3>
+  <img src="./profile-summary-card-output/default/3-stats.svg" width="100%" />
+</div>
+
+<br>
+
 <div align="center">
   <h3>🐍 爱丽丝正在和老师的提交记录玩贪吃蛇！</h3>
   <picture>
