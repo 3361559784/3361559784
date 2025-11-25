@@ -1,0 +1,37 @@
+name: Generate Snake
+
+on:
+  # 每天午夜自动运行一次 (北京时间早上8点)
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # 允许老师手动点按钮触发
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          # 把贪吃蛇是根据老师的这个账号生成的
+          github_user_name: 3361559784
+          # 生成不同颜色的蛇，分别对应浅色和深色模式
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Push to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          # 把生成的图片推送到一个叫 output 的特殊分支
+          target_branch: output
+          build_dir: dist
+        env:
+          # 这需要一个密钥，通常 GitHub 会自动处理
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
