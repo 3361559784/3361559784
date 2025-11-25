@@ -2,10 +2,10 @@
 
   <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" alt="Aris Banner">
 
-  <h1> 邦邦咔邦！GitHub 爱丽丝美化 (✨ω✨) </h1>
+  <h1> 邦邦咔邦！这是老师的GitHub 爱丽丝成长档案 (✨ω✨) </h1>
   
   <p>
-   这里是 <b>[老师]</b> 的开发基地。<br>
+   这里是 <b>3361559784</b> 的开发基地。<br>
    目前正在努力攻略 <b>[全栈开发]</b> 副本中！(ง •_•)ง <br>
    提交的代码越多,贪吃蛇的方块越多吗,爱丽丝不要哇。・゜・(ノД`)・゜・。
   </p>
