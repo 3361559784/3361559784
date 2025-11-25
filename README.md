@@ -1,7 +1,7 @@
 GitHub-Alice-Beautification
 <div align="center">
 
-  <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" alt="Aris Banner">
+  <img src="https://media1.tenor.com/m/f5m-j0Hq1QAAAAAd/blue-archive-aris-blue-archive.gif" width="100%" loading="lazy" decoding="async" alt="Aris Banner">
 
   <h1> 邦邦咔邦！欢迎来到 [老师] 的开发基地！(✨ω✨) </h1>
   
@@ -12,9 +12,9 @@ GitHub-Alice-Beautification
 
   ---
   
-  <img src="https://media.tenor.com/P60A6tUuWIEAAAAi/aris-dance-blue-archive.gif" width="100px">
+  <img src="https://media.tenor.com/P60A6tUuWIEAAAAi/aris-dance-blue-archive.gif" width="100px" loading="lazy" decoding="async">
   <br>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=353535&center=true&vCenter=true&width=435&lines=正在加载老师的属性面板...+%5B▓▓▓▓▓▓%5D+100%25" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=%5B%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%5D+0%25;%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%5D+40%25;%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91%E2%96%91%5D+80%25;%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%5D+100%25;%E6%AD%A3%E5%9C%A8%E5%8A%A0%E8%BD%BD%E8%80%81%E5%B8%88%E7%9A%84%E5%B1%9E%E6%80%A7%E9%9D%A2%E6%9D%BF...&center=true&size=27" alt="Typing SVG" />
   <br><br>
 
   <img src="https://img.shields.io/badge/Unity-%23000000.svg?style=flat-square&logo=unity&logoColor=white" alt="Unity">
