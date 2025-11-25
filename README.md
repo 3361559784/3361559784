@@ -15,7 +15,7 @@ GitHub-Alice-Beautification
   
   <img src="https://media.tenor.com/P60A6tUuWIEAAAAi/aris-dance-blue-archive.gif" width="100px">
   <br>
-  <i>正在加载老师的属性面板... [▓▓▓▓▓▓] 100%</i>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=353535&center=true&vCenter=true&width=435&lines=正在加载老师的属性面板...+%5B▓▓▓▓▓▓%5D+100%25" alt="Typing SVG" />
   <br><br>
 
   <img src="https://img.shields.io/badge/Unity-%23000000.svg?style=flat-square&logo=unity&logoColor=white" alt="Unity">
@@ -31,11 +31,11 @@ GitHub-Alice-Beautification
     <tr>
       <td valign="top" width="50%">
         <h3>📊 冒险者状态栏</h3>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=[3361559784]&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&icon_color=00BFFF" />
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=3361559784&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&icon_color=00BFFF" />
       </td>
       <td valign="top" width="50%">
         <h3>🛠️ 技能熟练度</h3>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=[3361559784]&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&langs_count=6" />
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=3361559784&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00BFFF&langs_count=6" />
       </td>
     </tr>
   </table>
@@ -45,7 +45,7 @@ GitHub-Alice-Beautification
 
 <div align="center">
   <h3>🐍 来一局游戏吗，老师？</h3>
-  <img src="https://github.com/platane/snk/raw/output/github-contribution-grid-snake.svg" alt="snake game" />
+  <img src="https://github.com/platane/snk/raw/output/github-contribution-grid-snake.svg" width="100%" alt="snake game" />
 </div>
 
 ---
