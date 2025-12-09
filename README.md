@@ -29,7 +29,7 @@
   ---
   
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=24&duration=2000&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=Initializing+Project+Aris...%E2%96%88;Deploying+to+Azure+Functions...%E2%96%88;Hybrid+Voice+Routing+Active!%E2%96%88" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=24&duration=2000&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=Initializing+Project+Aris...%E2%96%88;Serverless+Architecture+Design...%E2%96%88;Roadmap:+Hybrid+Voice+Routing...%E2%96%88" alt="Typing SVG" />
   </a>
   
   <br>
@@ -55,9 +55,10 @@
 ## 🌟 Project Aris - 多模态 AI 情感伴侣 (My Masterpiece)
 
 > **"Not just a bot, but a soul."**
-> 基于 Azure Serverless 与混合语音路由构建的下一代 AI Agent。
+> 基于 Azure Serverless 架构设计的下一代 AI Agent。
 
 <div align="center">
+  <h3>🏗️ Technical Roadmap & Architecture Design (v2.0 Preview)</h3>
   <pre lang="mermaid">
 graph TB
     subgraph "Input Layer 输入层"
@@ -170,14 +171,10 @@ graph TB
 </pre>
 </div>
 
-**核心亮点**:
+**核心亮点 (Core Features)**:
+
+**✅ 已实装 (Production)**:
 * ❤️ **情感状态机**: 7种情绪模式识别 + 动态好感度系统 (0-1000分),支持特殊节日加成。
-* 🗣️ **三层混合语音路由**: 
-  - Tier 1: GitHub Raw Assets (关键词直链,零延迟)
-  - Tier 2: GPT-SoVITS (本地声线克隆,高情感表现力)
-  - Tier 3: Azure TTS (云端快速合成,支持多语言)
-* ☁️ **云原生无服务器架构**: Azure Functions + Cosmos DB 实现弹性伸缩,冷启动优化至 800ms。
-* 🧠 **RAG 长期记忆系统**: 基于余弦相似度的向量检索,支持跨会话上下文召回。
 * 🎭 **多模态输入处理**:
   - 文本: 情绪识别 + RPG术语增强 + 智能分句
   - 图像: AnimeTrace识图 + Azure Custom Vision + Computer Vision 4.0
@@ -185,6 +182,14 @@ graph TB
 * 🎨 **AI绘图能力**: 集成 Pollinations API,支持64个碧蓝档案角色的中英文映射与特征保留。
 * 🌐 **多语言支持**: 自动检测中文/日文/英文,动态切换 Prompt 模板。
 * 🛡️ **生产级安全机制**: Token鉴权 + 群组冷却 (8s) + 用户限流 (2s) + 防刷屏防护。
+
+**🚧 架构设计中 (Roadmap v2.0)**:
+* 🗣️ **混合语音路由系统**: 设计了三层 TTS 架构以平衡速度与情感表现力:
+  - Tier 1: GitHub Raw Assets (关键词直链,已实现)
+  - Tier 2: GPT-SoVITS (本地声线克隆方案,已完成可行性验证)
+  - Tier 3: Azure TTS (云端快速合成,代码已就绪待部署)
+* ☁️ **Serverless 云原生架构**: 规划基于 Azure Functions + Cosmos DB 实现弹性伸缩与低成本运维。
+* 🧠 **RAG 长期记忆系统**: 设计基于余弦相似度的向量检索方案,支持跨会话上下文召回。
 
 <br>
 
