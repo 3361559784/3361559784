@@ -59,31 +59,132 @@
 
 <div align="center">
   <pre lang="mermaid">
-graph TD
-    User[User / Sensei] -->|Text/Touch/Image| NapCat[NapCat Edge/Docker]
-    NapCat -->|Webhook Event| Azure[Azure Functions Serverless]
-    
-    subgraph "Core Logic Node.js"
-        Azure -->|Auth & routing| Logic[Business Logic]
-        Logic -->|Retrieve| Memory[Cosmos DB Long-term Memory]
-        Logic -->|Analysis| Emotion[Affection State Machine]
+graph TB
+    subgraph "Input Layer 输入层"
+        User[👤 User/Sensei] -->|Text 文本| Input
+        User -->|Image 图片| Input
+        User -->|Poke 戳一戳| Input
+        Input[QQ Message]
     end
     
-    subgraph "Hybrid Voice Output TTS"
-        Logic -->|Short Text / Fast| CloudTTS[Azure TTS Cloud]
-        Logic -->|Long Text / Emotional| LocalTTS[GPT-SoVITS Local]
+    Input -->|Webhook POST| NapCat[🔌 NapCat Protocol Adapter]
+    NapCat -->|Event Payload| Azure
+    
+    subgraph "Azure Serverless Tier 云端无服务器层"
+        Azure[⚡ Azure Functions HTTP Trigger]
+        
+        Azure -->|Auth Check| Guard[🛡️ Security Guard]
+        Guard -->|Cooldown Check| RateLimit[⏱️ Rate Limiter]
+        RateLimit -->|Pass| Router[🎯 Intent Router]
+        
+        Router -->|Message Type| TypeCheck{消息类型?}
+        TypeCheck -->|Text| TextFlow
+        TypeCheck -->|Image| VisionFlow
+        TypeCheck -->|Poke| PokeFlow
     end
     
-    CloudTTS -->|Audio Stream| NapCat
-    LocalTTS -->|Audio Stream| NapCat
+    subgraph "Text Processing Pipeline 文本处理流"
+        TextFlow[📝 Text Handler]
+        TextFlow -->|Query History| CosmosDB[(🗄️ Cosmos DB)]
+        CosmosDB -->|Recent 15 msgs| TextFlow
+        
+        TextFlow -->|User Profile| AffectionDB[(❤️ Affection System)]
+        AffectionDB -->|Level & Points| TextFlow
+        
+        TextFlow -->|Emotion Detection| EmotionEngine[🎭 Emotion Analyzer]
+        EmotionEngine -->|7 Patterns| TextFlow
+        
+        TextFlow -->|Build Context| PromptBuilder[🧩 Dynamic Prompt Builder]
+        PromptBuilder -->|Time-aware| TimeSystem[🕐 Time of Day]
+        PromptBuilder -->|Memory Inject| RAG[🧠 RAG Memory Retrieval]
+        
+        PromptBuilder -->|Final Prompt| LLM[🤖 GitHub Models GPT-4o]
+        LLM -->|Generated Text| PostProcess
+    end
+    
+    subgraph "Vision Processing Pipeline 视觉处理流"
+        VisionFlow[🖼️ Image Handler]
+        VisionFlow -->|Anime Char?| AnimeTrace[🔍 AnimeTrace API]
+        VisionFlow -->|Custom Model| CustomVision[👁️ Azure Custom Vision]
+        VisionFlow -->|General OCR| ComputerVision[📸 Azure CV 4.0]
+        
+        AnimeTrace -->|Character Info| VisionMerge
+        CustomVision -->|Aris Detection| VisionMerge
+        ComputerVision -->|Scene Description| VisionMerge
+        VisionMerge[🎨 Vision Result Merger] -->|Context| LLM
+        
+        VisionFlow -->|Draw Request?| DrawEngine[✨ AI Image Generator]
+        DrawEngine -->|Prompt Extract| PromptRefiner[📜 Prompt Engineer]
+        PromptRefiner -->|Character Map| CharDB[🎭 Character DB]
+        PromptRefiner -->|API Call| Pollinations[🌸 Pollinations API]
+    end
+    
+    subgraph "Poke Interaction System 戳一戳系统"
+        PokeFlow[👆 Poke Handler]
+        PokeFlow -->|Count Window| PokeCounter[(⏲️ Poke State Cache)]
+        PokeCounter -->|Threshold Check| PokeMood{触发模式?}
+        
+        PokeMood -->|Gentle 温柔| GentleResp[💕 Sweet Response]
+        PokeMood -->|Annoyed 不耐烦| AnnoyedResp[😤 Annoyed Response]
+        PokeMood -->|Counter 反击| CounterPoke[👊 Counter Attack]
+        
+        GentleResp -->|Affection +5| AffectionDB
+        AnnoyedResp -->|Affection -5| AffectionDB
+        CounterPoke -->|Call API| NapCatAPI[📤 NapCat Send Poke]
+    end
+    
+    subgraph "Response Generation Layer 响应生成层"
+        PostProcess[🔧 Smart Post-Processor]
+        PostProcess -->|Emoji→Kaomoji| EmojiConvert[😊→ω✨]
+        PostProcess -->|Sentence Split| SmartSplit[📏 Smart Splitter]
+        PostProcess -->|RPG Terms| RPGEnhance[⚔️ RPG Terminology]
+        
+        PostProcess -->|Check Keywords| AudioRouter{需要语音?}
+        
+        AudioRouter -->|Keyword Match| GithubAudio[🎵 GitHub Raw Audio Assets]
+        AudioRouter -->|Short & Fast| AzureTTS[☁️ Azure TTS ja-JP-NanamiNeural]
+        AudioRouter -->|Long & Emotional| LocalTTS[🎙️ GPT-SoVITS Local Server]
+        
+        LocalTTS -->|REF: Aris_Battle_Damage_3.wav| SoVITSEngine
+        SoVITSEngine[🔊 Voice Clone Engine] -->|Audio Stream| Output
+        
+        GithubAudio -->|Direct URL| Output
+        AzureTTS -->|SSML Synthesis| Output
+    end
+    
+    subgraph "Output & Persistence 输出与持久化"
+        Output[📨 Response Package]
+        Output -->|Save to DB| CosmosDB
+        Output -->|Update Points| AffectionDB
+        Output -->|Store Event| RAG
+        
+        Output -->|HTTP 200 + Payload| NapCat
+        NapCat -->|Send QQ Message| User
+    end
+    
+    style Azure fill:#0078D4,stroke:#fff,color:#fff
+    style LLM fill:#10a37f,stroke:#fff,color:#fff
+    style CosmosDB fill:#0078D4,stroke:#fff,color:#fff
+    style LocalTTS fill:#ff6b6b,stroke:#fff,color:#fff
+    style AffectionDB fill:#ff69b4,stroke:#fff,color:#fff
 </pre>
 </div>
 
 **核心亮点**:
-* ❤️ **情感状态机**: 动态计算好感度,驱动人格变化。
-* 🗣️ **混合路由**: 云端 TTS (速度) + 本地 GPT-SoVITS (情感) 协同工作。
-* ☁️ **云原生架构**: 基于 Azure Functions 实现弹性伸缩,即使在网络波动的环境下也能保持 99.9% 可用性。
-* 🧠 **长期记忆**: Cosmos DB 存储对话历史,让爱丽丝真正"记得"老师。
+* ❤️ **情感状态机**: 7种情绪模式识别 + 动态好感度系统 (0-1000分),支持特殊节日加成。
+* 🗣️ **三层混合语音路由**: 
+  - Tier 1: GitHub Raw Assets (关键词直链,零延迟)
+  - Tier 2: GPT-SoVITS (本地声线克隆,高情感表现力)
+  - Tier 3: Azure TTS (云端快速合成,支持多语言)
+* ☁️ **云原生无服务器架构**: Azure Functions + Cosmos DB 实现弹性伸缩,冷启动优化至 800ms。
+* 🧠 **RAG 长期记忆系统**: 基于余弦相似度的向量检索,支持跨会话上下文召回。
+* 🎭 **多模态输入处理**:
+  - 文本: 情绪识别 + RPG术语增强 + 智能分句
+  - 图像: AnimeTrace识图 + Azure Custom Vision + Computer Vision 4.0
+  - 交互: 戳一戳渐进式情绪系统 (温柔→烦躁→反击)
+* 🎨 **AI绘图能力**: 集成 Pollinations API,支持64个碧蓝档案角色的中英文映射与特征保留。
+* 🌐 **多语言支持**: 自动检测中文/日文/英文,动态切换 Prompt 模板。
+* 🛡️ **生产级安全机制**: Token鉴权 + 群组冷却 (8s) + 用户限流 (2s) + 防刷屏防护。
 
 <br>
 
