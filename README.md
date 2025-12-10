@@ -187,10 +187,11 @@ graph TB
 * 🗣️ **混合语音路由系统**: 设计了三层 TTS 架构以平衡速度与情感表现力:
   - Tier 1: GitHub Raw Assets (关键词直链,已实现)
   - Tier 2: GPT-SoVITS (本地声线克隆方案,已完成可行性验证)
-  - Tier 3: Azure TTS (云端快速合成,代码已就绪待部署)
+  - Tier 3: Azure TTS (已集成官方 SDK，因语音质量暂未正式启用，后续可选)
 * ☁️ **Serverless 云原生架构**: 规划基于 Azure Functions + Cosmos DB 实现弹性伸缩与低成本运维。
 * 🧠 **RAG 长期记忆系统**: 设计基于余弦相似度的向量检索方案,支持跨会话上下文召回。
 
+> 已完成 Azure TTS 代码集成（microsoft-cognitiveservices-speech-sdk, edge-tts），因语音质量未达预期，暂未接入主流程，后续可根据实际体验灵活启用。
 <br>
 
 <div align="center">
