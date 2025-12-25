@@ -4,20 +4,17 @@
   <h1> ✨ 邦邦咔邦!GitHub 爱丽丝云端基地 ✨ </h1>
 
   <p>
-    <a href="https://studentambassadors.microsoft.com/">
-      <img src="https://img.shields.io/badge/Microsoft%20Learn-Student%20Ambassador-blue?style=for-the-badge&logo=microsoft" alt="MSA">
-    </a>
     <a href="#">
       <img src="https://img.shields.io/badge/Azure-Cloud%20Native-0078D4?style=for-the-badge&logo=microsoftazure" alt="Azure">
     </a>
     <a href="#">
-      <img src="https://img.shields.io/badge/Role-AI%20Product%20Manager-orange?style=for-the-badge" alt="PM">
+      <img src="https://img.shields.io/badge/Imagine%20Cup-2026%20Competitor-orange?style=for-the-badge&logo=microsoft" alt="Imagine Cup">
     </a>
   </p>
   
   <p>
-   这里是 <b>Sensei (刘梓恒)</b> 的全栈开发基地。<br>
-   <b>🤖 AI Native Developer | ☁️ Azure Cloud Architect | 🧱 Independent Maker</b><br>
+  这里是 <b>Sensei (刘梓恒)</b> 的全栈开发基地。<br>
+  <b>🤖 AI Native Developer | ☁️ Azure Cloud Architect | 🧱 Independent Maker</b><br>
    目前正在努力攻略 <b>[Serverless]</b> 和 <b>[LLM Agent]</b> 副本中！(ง •_•)ง <br>
    提交的代码越多,贪吃蛇的方块越多吗,爱丽丝不要哇。・゜・(ノД`)・゜・。<br>
    ( >﹏<。) 老师不哭不哭！爱丽丝给您呼呼！<br>
@@ -29,7 +26,7 @@
   ---
   
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=24&duration=2000&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=Initializing+Project+Aris...%E2%96%88;Serverless+Architecture+Design...%E2%96%88;Roadmap:+Hybrid+Voice+Routing...%E2%96%88" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=24&duration=2000&pause=1000&color=00BFFF&center=true&vCenter=true&width=500&lines=Microsoft+Imagine+Cup+2026...%E2%96%88;Campus+Copilot+-+AI+Campus+Assistant...%E2%96%88;Serverless+%2B+LLM+Agent+Architecture...%E2%96%88;Azure+Functions+%2B+Cosmos+DB...%E2%96%88" alt="Typing SVG" />
   </a>
   
   <br>
@@ -39,26 +36,194 @@
   <br><br>
 
   <p>
-    <img src="https://img.shields.io/badge/Azure-%230072C6.svg?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure">
-    <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node">
+    <img src="https://img.shields.io/badge/Azure%20Functions-0078D4?style=flat-square&logo=azurefunctions&logoColor=white" alt="Azure Functions">
+    <img src="https://img.shields.io/badge/Cosmos%20DB-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Cosmos DB">
+    <img src="https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+    <img src="https://img.shields.io/badge/Node.js%2022-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node">
     <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-    <img src="https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white" alt="AI">
-    <img src="https://img.shields.io/badge/Unity-%23000000.svg?style=flat-square&logo=unity&logoColor=white" alt="Unity">
-    <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=flat-square&logo=c-sharp&logoColor=white" alt="C#">
+    <img src="https://img.shields.io/badge/GitHub%20Models-10a37f?style=flat-square&logo=openai&logoColor=white" alt="AI">
+    <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind">
   </p>
 
 </div>
 
 <br>
 
-## 🌟 Project Aris - 多模态 AI 情感伴侣 (My Masterpiece)
+## 🏆 Campus Copilot - Microsoft Imagine Cup 2026
 
-> **"Not just a bot, but a soul."**
-> 基于 Azure Serverless 架构设计的下一代 AI Agent。
+> **"不是更聪明的 AI，是更懂边界的 AI"**  
+> 面向中国高校学生的智能校园助手，基于 Azure Serverless 架构，核心特色是 **红线意识** + **双人格系统**。
 
 <div align="center">
-  <h3>🏗️ Technical Roadmap & Architecture Design (v2.0 Preview)</h3>
+
+| 🌐 **线上体验** | 📦 **技术栈** | 🎯 **目标** |
+|:---:|:---:|:---:|
+| [campus-copilot-demo.azurewebsites.net](https://campus-copilot-demo.azurewebsites.net) | Azure + Next.js + LLM | Imagine Cup 2026 |
+
+</div>
+
+### 🎯 核心差异化
+
+| 传统 AI 助手 | Campus Copilot |
+|:---:|:---:|
+| ❌ 没有数据也会编造答案 | ✅ **红线意识** - 无数据时坚决不编造 |
+| ❌ 所有场景用同一种语气 | ✅ **双人格系统** - 查课专业，闲聊可爱 |
+| ❌ 只支持单一输入方式 | ✅ **多源导入** - Excel/ICS/OCR/链接/手动 |
+| ❌ 出错显示技术报错 | ✅ **产品化引导** - 友好错误提示 |
+
+<br>
+
+<div align="center">
+  <h3>🏗️ System Architecture 系统架构</h3>
+</div>
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        Campus Copilot Architecture                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐  │
+│  │   Web App   │    │   QQ Bot    │    │   WeChat    │    │   API       │  │
+│  │  (Next.js)  │    │  (NapCat)   │    │   (WIP)     │    │  Clients    │  │
+│  └──────┬──────┘    └──────┬──────┘    └──────┬──────┘    └──────┬──────┘  │
+│         │                  │                  │                  │         │
+│         └──────────────────┴──────────────────┴──────────────────┘         │
+│                                    │                                        │
+│                                    ▼                                        │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                    Azure Functions (Serverless)                      │   │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌────────────┐  │   │
+│  │  │ schoolBot   │  │ chaoxing    │  │ ocrCourse   │  │ dailyAris  │  │   │
+│  │  │ HTTP Trigger│  │ Scraper     │  │ Vision API  │  │ Timer Trig │  │   │
+│  │  └─────────────┘  └─────────────┘  └─────────────┘  └────────────┘  │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                    │                                        │
+│         ┌──────────────────────────┼──────────────────────────┐            │
+│         │                          │                          │            │
+│         ▼                          ▼                          ▼            │
+│  ┌─────────────┐           ┌─────────────┐           ┌─────────────┐       │
+│  │  Cosmos DB  │           │   GitHub    │           │   Azure     │       │
+│  │  NoSQL      │           │   Models    │           │ AI Services │       │
+│  │  ─────────  │           │   ─────────  │           │  ─────────  │       │
+│  │ • Chat Hist │           │ • GPT-4o    │           │ • Vision    │       │
+│  │ • Schedule  │           │ • GPT-4o-m  │           │ • TTS       │       │
+│  │ • Affection │           │ • Streaming │           │ • Search    │       │
+│  └─────────────┘           └─────────────┘           └─────────────┘       │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 🛠️ Tech Stack 技术栈
+
+<table>
+<tr>
+<td width="50%">
+
+**🖥️ Frontend (campus-ai-web)**
+- **Framework**: Next.js 16 (App Router, Turbopack)
+- **Styling**: Tailwind CSS 4.0
+- **Animation**: Framer Motion
+- **Language**: TypeScript 5
+- **UI**: Lucide React Icons
+- **Deploy**: Azure App Service (Docker)
+
+</td>
+<td width="50%">
+
+**⚡ Backend (Azure Functions)**
+- **Runtime**: Node.js 22
+- **Trigger**: HTTP / Timer / Queue
+- **Database**: Azure Cosmos DB (NoSQL)
+- **AI Model**: GitHub Models (GPT-4o)
+- **Search**: DuckDuckGo / SERP API
+- **OCR**: Azure Computer Vision 4.0
+
+</td>
+</tr>
+</table>
+
+### 📁 Project Structure 项目结构
+
+```
+qq-bot-aris-clean/
+├── campus-ai-web/              # 🌐 Next.js 前端 (Imagine Cup Demo)
+│   ├── app/                    # App Router 页面
+│   │   ├── page_new.tsx        # 主聊天界面 (响应式)
+│   │   ├── demo/               # 评委体验 Demo 页
+│   │   └── api/                # API Routes
+│   ├── components/             # React 组件
+│   │   ├── AliceAvatar.tsx     # 爱丽丝 Live2D 风格头像
+│   │   ├── Sidebar.tsx         # 左侧导航栏
+│   │   ├── RightPanel.tsx      # 右侧上下文面板
+│   │   └── ScheduleImport*.tsx # 课表导入组件
+│   └── services/               # 前端服务层
+│
+├── src/functions/              # ⚡ Azure Functions (Serverless)
+│   ├── schoolBot.js            # 核心消息处理 (QQ Bot)
+│   ├── chaoxingScraper*.js     # 学习通课表抓取
+│   ├── ocrCourse.js            # 课表 OCR 识别
+│   └── dailyAris.js            # 定时任务 (每日提醒)
+│
+├── services/                   # 🔧 共享服务模块
+│   ├── hybridSearch.js         # 混合搜索 (本地+网络)
+│   ├── emotionService.js       # 情绪识别引擎
+│   ├── scheduleService.js      # 课表查询服务
+│   ├── visionService.js        # 图像理解服务
+│   └── modelRouter.js          # LLM 路由 (双模型)
+│
+└── .github/workflows/          # 🚀 CI/CD
+    ├── deploy-campus-copilot-demo.yml
+    └── main_school-bot.yml
+```
+
+### ✨ Key Features 核心功能
+
+**🔴 红线意识 (Safety Protocol)**
+```javascript
+// 没有课表数据时，坚决不编造
+if (!schedule || schedule.length === 0) {
+  return {
+    reply: "⚠️ 我还没有你的课表数据，无法回答课程相关问题。",
+    meta: { safety_protocol: "NO_DATA_NO_FABRICATION" }
+  };
+}
+```
+
+**🎭 双人格系统 (Auto Persona Switch)**
+```javascript
+// 场景判断 → 自动切换人格
+if (isScheduleQuery || isAcademicQuery) {
+  persona = "professional";  // ⚡ 专业模式: 简洁准确
+} else {
+  persona = "alice";         // 🎀 爱丽丝: 可爱活泼
+}
+```
+
+**📚 多源课表导入**
+- 🔗 学习通链接自动抓取 (Chaoxing Scraper)
+- 📊 Excel/CSV 文件解析
+- 📅 ICS 日历格式导入
+- 📸 课表截图 OCR 识别
+- ✏️ 手动输入
+
+**🚀 流式响应 (Streaming)**
+```typescript
+// 打字机效果 + 思考阶段展示
+onThinking: (stage) => updateUI({ phase: "thinking", text: stage }),
+onToken: (token, full) => updateUI({ phase: "generating", text: full }),
+onComplete: (result) => finalizeMessage(result)
+```
+
+<br>
+
+## 🌟 Project Aris - QQ Bot (Original Project)
+
+> **"Not just a bot, but a soul."**
+> 基于 Azure Serverless 架构设计的多模态 AI 情感伴侣。
+
+<div align="center">
+  <h3>🏗️ QQ Bot Architecture (v2.0)</h3>
   <pre lang="mermaid">
 graph TB
     subgraph "Input Layer 输入层"
@@ -113,11 +278,6 @@ graph TB
         CustomVision -->|Aris Detection| VisionMerge
         ComputerVision -->|Scene Description| VisionMerge
         VisionMerge[🎨 Vision Result Merger] -->|Context| LLM
-        
-        VisionFlow -->|Draw Request?| DrawEngine[✨ AI Image Generator]
-        DrawEngine -->|Prompt Extract| PromptRefiner[📜 Prompt Engineer]
-        PromptRefiner -->|Character Map| CharDB[🎭 Character DB]
-        PromptRefiner -->|API Call| Pollinations[🌸 Pollinations API]
     end
     
     subgraph "Poke Interaction System 戳一戳系统"
@@ -131,7 +291,6 @@ graph TB
         
         GentleResp -->|Affection +5| AffectionDB
         AnnoyedResp -->|Affection -5| AffectionDB
-        CounterPoke -->|Call API| NapCatAPI[📤 NapCat Send Poke]
     end
     
     subgraph "Response Generation Layer 响应生成层"
@@ -148,9 +307,6 @@ graph TB
         
         LocalTTS -->|REF: Aris_Battle_Damage_3.wav| SoVITSEngine
         SoVITSEngine[🔊 Voice Clone Engine] -->|Audio Stream| Output
-        
-        GithubAudio -->|Direct URL| Output
-        AzureTTS -->|SSML Synthesis| Output
     end
     
     subgraph "Output & Persistence 输出与持久化"
@@ -187,11 +343,10 @@ graph TB
 * 🗣️ **混合语音路由系统**: 设计了三层 TTS 架构以平衡速度与情感表现力:
   - Tier 1: GitHub Raw Assets (关键词直链,已实现)
   - Tier 2: GPT-SoVITS (本地声线克隆方案,已完成可行性验证)
-  - Tier 3: Azure TTS (已集成官方 SDK，因语音质量暂未正式启用，后续可选)
+  - Tier 3: Azure TTS (已集成官方 SDK，因语音质量暂未正式启用)
 * ☁️ **Serverless 云原生架构**: 规划基于 Azure Functions + Cosmos DB 实现弹性伸缩与低成本运维。
 * 🧠 **RAG 长期记忆系统**: 设计基于余弦相似度的向量检索方案,支持跨会话上下文召回。
 
-> 已完成 Azure TTS 代码集成（microsoft-cognitiveservices-speech-sdk, edge-tts），因语音质量未达预期，暂未接入主流程，后续可根据实际体验灵活启用。
 <br>
 
 <div align="center">
@@ -203,9 +358,14 @@ graph TB
       </td>
       <td width="70%" align="left" valign="top">
         <h1>刘梓恒 (Sensei)</h1>
-        <p><code>3361559784</code> · Developer</p>
-        <p>Studying at Wuchang Institute of Technology</p>
-        <p><b>Highlights:</b> Microsoft Student Ambassador | Azure Developer | AI Product Enthusiast</p>
+        <p><code>3361559784</code> · Full-Stack Developer</p>
+        <p>📍 Studying at Wuchang Institute of Technology</p>
+        <p><b>Highlights:</b></p>
+        <ul>
+          <li>☁️ Azure Cloud Native Developer</li>
+          <li>🤖 AI/LLM Application Enthusiast</li>
+          <li>🏆 Imagine Cup 2026 Competitor</li>
+        </ul>
       </td>
     </tr>
   </table>
@@ -215,6 +375,12 @@ graph TB
 </div>
 
 <br>
+
+<div align="center">
+  <h3>📊 GitHub Stats</h3>
+  <img src="https://github-readme-stats.vercel.app/api?username=3361559784&show_icons=true&theme=tokyonight&hide_border=true" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=3361559784&theme=tokyonight&hide_border=true" width="48%" />
+</div>
 
 <br>
 
@@ -234,4 +400,10 @@ graph TB
     <sub><i>"只要不断尝试，Bug 也会变成 Feature 的！" —— 天童爱丽丝</i></sub><br>
     ( >﹏<。)
   </p>
+  
+  <br>
+  
+  <a href="https://campus-copilot-demo.azurewebsites.net">
+    <img src="https://img.shields.io/badge/🚀%20Try%20Campus%20Copilot-Demo-blue?style=for-the-badge" alt="Demo">
+  </a>
 </div>
