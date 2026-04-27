@@ -11,7 +11,7 @@
 
   <p>
     这里不是很正式的简历页。<br>
-    更像一张正在更新的作战地图：AI Agent、MCP、桌面自动化、云端应用，还有一点爱丽丝。
+    更像一张正在更新的作战地图：AI Agent、MCP、桌面自动化、云端应用、开源协作，还有一点爱丽丝。
   </p>
 
   <p>
@@ -63,6 +63,14 @@
 - 上下文、记忆、归档会不会反过来污染 prompt。
 - 桌面和浏览器自动化能不能从观察、定位、执行、审计一路闭合。
 
+一些近期比较常碰的切片：
+
+- transcript / archive retention：把 prompt projection、archive candidate、context budget 这几条线对齐。
+- task memory / evidence pins：让当前 run 的关键证据能进下一轮，但不会伪装成指令。
+- workspace memory governance：propose、review、apply 分层，不让模型自己把临时结论永久化。
+- coding runner recovery：text-only final、verification gate、shell misuse、budget exhausted 这些失败都要能分类。
+- desktop v3：Chrome-first、visual + semantic grounding、overlay/ghost pointer、OS input boundary。
+
 <table>
 <tr>
 <td width="50%">
@@ -92,14 +100,30 @@
 
 一句话概括：我在做的是让 AI Agent 的执行链路更硬一点，少一点“模型自己悟了”，多一点 runtime contract。
 
+我也会关注一点 AI governance，但不会把它写成很空的口号。对我来说它现在更像工程纪律：哪些东西能被模型看到，哪些东西能被模型写入，哪些状态必须有人类或 host gate 才能改变，哪些证据只能当历史资料不能当系统指令。
+
 ### Campus Copilot / Project Aris
 
-Campus Copilot 和 Project Aris 仍然保留，但不再占满整个主页。
+Campus Copilot 和 Project Aris 仍然保留，但不再占满整个主页。它们是我早期比较完整的一条应用线：从 QQ Bot、课表、OCR、人格切换，到 Azure serverless 部署和 web demo。
 
 - 校园 AI 助手，重点是“没有数据就不编造”。
 - Azure Functions / Cosmos DB / Next.js / QQ Bot。
 - 做过课表导入、OCR、双人格、流式响应、定时提醒。
 - 它更像前一个阶段：从能跑的 AI 应用，走向有边界的 AI 系统。
+
+这一段现在不会再展开一整张架构图。原因很简单：Campus Copilot 仍然是重要项目，但主页现在更应该展示我正在做的 open-source execution line。
+
+### What this page is trying to say
+
+我不太想把主页写成“精通很多技术”的列表。技术栈当然重要，但我更在意系统最后会不会留下这些东西：
+
+- 可复现的测试。
+- 可读的 trace。
+- 不乱扩权的工具边界。
+- 出错以后还能继续定位的状态机。
+- 让下一个人接手时不会想关电脑的文档和提交。
+
+如果一个 agent 系统只有漂亮 demo，没有 failure contract，那它很快就会变成随机数发生器。随机数可以很可爱，但不能拿来当执行系统。
 
 ---
 
