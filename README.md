@@ -49,27 +49,34 @@
 
 ---
 
-## Current Questline
+## 当前方向
 
-### Project AIRI / computer-use-mcp
+### 1. Project AIRI / computer-use-mcp
 
-现在最主要的公开线是 [Project AIRI](https://github.com/moeru-ai/airi)。我主要参与 `computer-use-mcp`、desktop/browser automation、coding runner 这几块。
+最近主要在 [Project AIRI](https://github.com/moeru-ai/airi) 里做 `computer-use-mcp` 和 desktop / browser automation 相关的改动。
 
-这条线关心的不是“模型说它做完了”，而是：
+这条线大概分成几块：
 
-- 工具调用有没有边界。
-- 执行结果有没有证据。
-- 失败以后能不能恢复。
-- 上下文、记忆、归档会不会反过来污染 prompt。
-- 桌面和浏览器自动化能不能从观察、定位、执行、审计一路闭合。
+**Coding runner / context**
 
-一些近期比较常碰的切片：
+- completion report、verification gate、budget exhausted、text-only final 这些收尾问题。
+- transcript projection、archive recall、context budget policy。
+- task memory、workspace memory、evidence pins，主要是防止上下文越写越脏。
+- live eval 和 deterministic regression，避免只靠一次演示说“能跑”。
 
-- transcript / archive retention：把 prompt projection、archive candidate、context budget 这几条线对齐。
-- task memory / evidence pins：让当前 run 的关键证据能进下一轮，但不会伪装成指令。
-- workspace memory governance：propose、review、apply 分层，不让模型自己把临时结论永久化。
-- coding runner recovery：text-only final、verification gate、shell misuse、budget exhausted 这些失败都要能分类。
-- desktop v3：Chrome-first、visual + semantic grounding、overlay/ghost pointer、OS input boundary。
+**Desktop / browser automation**
+
+- Chrome semantic DOM bridge。
+- iframe 坐标修正。
+- desktop grounding / target candidates。
+- overlay、ghost pointer、OS input boundary。
+- Chrome-first 的桌面控制链路。
+
+**MCP tool surface**
+
+- tool schema、tool descriptor、public/internal boundary。
+- approval、audit、trace。
+- request / apply 这类需要分权限的状态变更。
 
 <table>
 <tr>
@@ -98,46 +105,49 @@
 </tr>
 </table>
 
-说白了，就是少相信模型临场发挥，多把该钉死的地方钉死。
+这部分不往 title 上加戏，按实际贡献写：我主要是在补执行链路里的边界、测试、恢复路径和可审计信息。
 
-AI governance 这块我也会看一点，但目前更偏工程层面的东西：哪些内容能进上下文，哪些状态不能让模型自己改，哪些记录只能当参考不能当指令。先把这些小边界守住，比写一大堆漂亮原则有用。
+### 2. Campus Copilot / Project Aris
 
-### Campus Copilot / Project Aris
+Campus Copilot 和 Project Aris 是早一点的完整应用线。现在不再让它们占满整个主页，但还是值得保留。
 
-Campus Copilot 和 Project Aris 仍然保留，但不再占满整个主页。它们是我早期比较完整的一条应用线：从 QQ Bot、课表、OCR、人格切换，到 Azure serverless 部署和 web demo。
+做过的东西：
 
-- 校园 AI 助手，重点是“没有数据就不编造”。
-- Azure Functions / Cosmos DB / Next.js / QQ Bot。
-- 做过课表导入、OCR、双人格、流式响应、定时提醒。
-- 它更像前一个阶段：从能跑的 AI 应用，走向有边界的 AI 系统。
+- QQ Bot 消息处理。
+- 课表查询和多源导入。
+- OCR 识别课表截图。
+- 双人格和场景切换。
+- Azure Functions / Cosmos DB / Next.js web demo。
+- 流式响应、定时提醒、校园数据接入。
 
-这一段现在不会再展开一整张架构图。原因很简单：Campus Copilot 仍然是重要项目，但主页现在更应该展示我正在做的 open-source execution line。
+这条线的重点是校园场景和产品闭环。AIRI 这条线更偏执行系统、工具边界和开源协作。
 
-### What this page is trying to say
+### 3. AI governance
 
-我不太想把主页写成“精通很多技术”的列表。技术栈当然重要，但我更在意系统最后会不会留下这些东西：
+这里说的 governance 不是很大的概念，更多是工程里会直接遇到的问题：
 
-- 可复现的测试。
-- 可读的 trace。
-- 不乱扩权的工具边界。
-- 出错以后还能继续定位的状态机。
-- 让下一个人接手时不会想关电脑的文档和提交。
+- 哪些内容能进 prompt。
+- 哪些工具能被模型直接调用。
+- 哪些状态必须经过 review / token / host gate。
+- 哪些记录只能当证据，不能当指令。
+- 哪些失败要直接拦住，不能靠模型自己解释过去。
 
-如果一个 agent 系统只有漂亮 demo，没有 failure contract，那它很快就会变成随机数发生器。随机数可以很可爱，但不能拿来当执行系统。
-
----
-
-## Things I Care About
-
-- AI Agent 不能只靠 prompt 维持纪律。
-- Memory、archive、transcript 可以提供上下文，但不能伪装成系统指令。
-- Desktop automation 不是乱点屏幕，而是 observation、semantic target、OS input、approval、rollback 的组合。
-- 一个 PR 只解决一个问题。基线够用就冻结，别把第二个问题域混进去。
-- 测试不是装饰。不能复现的 bug，迟早会回来。
+这块我现在不会写太深。先把实际系统里的小边界做好，比先写一套很大的原则更有用。
 
 ---
 
-## Toolbox
+## 工程偏好
+
+- 先看代码、测试、日志，再下结论。
+- PR 尽量小，commit 拆清楚。
+- baseline 够用就冻结，不在同一个分支里继续叠无关修补。
+- 文档要跟实现、测试、脚本对得上。
+- 能写 deterministic test 就不要只靠 live demo。
+- Agent 系统要有 failure contract，不然出错以后很难接手。
+
+---
+
+## 工具箱
 
 <table>
 <tr>
