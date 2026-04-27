@@ -143,10 +143,13 @@
 </tr>
 </table>
 
+<!-- AIRI_MERGED_PRS_START -->
 <details>
 <summary><b>Selected merged AIRI PRs</b></summary>
 
 <br>
+
+<p><sub>Auto-updated daily from selected merged PRs authored by <code>3361559784</code> in <code>moeru-ai/airi</code>.</sub></p>
 
 <table>
 <tr>
@@ -155,31 +158,32 @@
 </tr>
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1734">#1734</a></td>
-<td>transcript truth source and safe projection</td>
+<td>feat(computer-use-mcp): add transcript truth source and safe projection</td>
 </tr>
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1733">#1733</a></td>
-<td>read-only DOM tools parity for the extension bridge</td>
+<td>feat(computer-use-mcp): add read-only DOM tools parity to extension bridge</td>
 </tr>
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1727">#1727</a></td>
-<td>route target clicks through the action executor</td>
+<td>fix(computer-use-mcp): route target clicks through action executor</td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1649">#1649</a></td>
+<td>[3/3] feat(desktop): intro agent-owned session and ghost pointer phases</td>
 </tr>
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1648">#1648</a></td>
-<td>browser-native DOM action routing</td>
+<td>feat(stage-tamagotchi,computer-use-mcp): implement browser-native DOM action routing</td>
 </tr>
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1647">#1647</a></td>
-<td>desktop observation and overlay baseline</td>
-</tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1380">#1380</a></td>
-<td>foundation of computer use</td>
+<td>[1/3] feat(desktop): add desktop observation and overlay baseline</td>
 </tr>
 </table>
 
 </details>
+<!-- AIRI_MERGED_PRS_END -->
 
 ---
 
