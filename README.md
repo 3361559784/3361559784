@@ -6,7 +6,7 @@
 
   <p>
     <b>刘梓恒 / 3361559784</b><br>
-    AI Native Developer · Open-source contributor · Full-stack builder
+    AI Agent / MCP developer · Open-source contributor · Full-stack builder
   </p>
 
   <p>
@@ -136,12 +136,50 @@
   <li>Chrome bridge lifecycle</li>
   <li>iframe coordinate hardening</li>
   <li>overlay input isolation</li>
-  <li>future cursor save / restore discipline</li>
+  <li>cursor restore behavior</li>
 </ul>
 
 </td>
 </tr>
 </table>
+
+<details>
+<summary><b>Selected merged AIRI PRs</b></summary>
+
+<br>
+
+<table>
+<tr>
+<td width="18%"><b>PR</b></td>
+<td><b>Area</b></td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1734">#1734</a></td>
+<td>transcript truth source and safe projection</td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1733">#1733</a></td>
+<td>read-only DOM tools parity for the extension bridge</td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1727">#1727</a></td>
+<td>route target clicks through the action executor</td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1648">#1648</a></td>
+<td>browser-native DOM action routing</td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1647">#1647</a></td>
+<td>desktop observation and overlay baseline</td>
+</tr>
+<tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1380">#1380</a></td>
+<td>foundation of computer use</td>
+</tr>
+</table>
+
+</details>
 
 ---
 
@@ -258,7 +296,7 @@ Campus Copilot 和 Project Aris 是早一点的完整应用线。它们现在不
 <ul>
   <li>Electron</li>
   <li>Vue</li>
-  <li>Eventa IPC</li>
+  <li>typed Electron IPC via Eventa</li>
   <li>Chrome bridge</li>
   <li>macOS automation</li>
 </ul>
