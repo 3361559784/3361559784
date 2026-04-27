@@ -1,14 +1,17 @@
 <div align="center">
 
-  <h1>刘梓恒 / 3361559784</h1>
+  <img src="https://raw.githubusercontent.com/3361559784/3361559784/main/wallpaper-ezgif.com-gif-maker-3.gif" width="100%" style="border-radius: 12px; box-shadow: 0 0 24px rgba(0,191,255,0.45);" alt="AIRI and Aris banner">
+
+  <h1>邦邦咔邦! GitHub 爱丽丝云端基地</h1>
 
   <p>
-    <b>AI Native Developer · Open-source contributor · Full-stack builder</b>
+    <b>刘梓恒 / 3361559784</b><br>
+    AI Native Developer · Open-source contributor · Full-stack builder
   </p>
 
   <p>
-    我现在主要在做一件事：<br>
-    把 AI Agent 从“会聊天”往“能安全执行、能被验证、能被接手”的方向推进。
+    这里不是很正式的简历页。<br>
+    更像一张正在更新的作战地图：AI Agent、MCP、桌面自动化、云端应用，还有一点爱丽丝。
   </p>
 
   <p>
@@ -16,83 +19,135 @@
       <img src="https://img.shields.io/badge/Project%20AIRI-Contributor-00BFFF?style=for-the-badge" alt="Project AIRI contributor">
     </a>
     <a href="https://github.com/moeru-ai/airi/tree/main/services/computer-use-mcp">
-      <img src="https://img.shields.io/badge/computer--use--mcp-Execution%20Substrate-10a37f?style=for-the-badge" alt="computer-use-mcp">
+      <img src="https://img.shields.io/badge/computer--use--mcp-Execution%20Substrate-111827?style=for-the-badge" alt="computer-use-mcp">
+    </a>
+    <a href="https://github.com/3361559784">
+      <img src="https://img.shields.io/badge/Status-Building%20in%20public-10a37f?style=for-the-badge" alt="Building in public">
     </a>
   </p>
+
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Pixelify+Sans&size=24&duration=2200&pause=900&color=00BFFF&center=true&vCenter=true&width=640&lines=Project+AIRI+execution+line...;MCP+tools+and+runtime+discipline...;Desktop+and+browser+automation...;Azure+apps+and+AI+agents..." alt="Typing SVG" />
+  </a>
+
+  <br><br>
+
+  <img src="https://media.tenor.com/P60A6tUuWIEAAAAi/aris-dance-blue-archive.gif" width="100px" alt="Aris dance">
+
+  <br><br>
 
   <p>
     <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
     <img src="https://img.shields.io/badge/Vue-42B883?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue">
+    <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron">
     <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
     <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure">
-    <img src="https://img.shields.io/badge/MCP-Tools%20%2F%20Agents-111827?style=flat-square" alt="MCP tools and agents">
+    <img src="https://img.shields.io/badge/MCP-Agent%20Tools-111827?style=flat-square" alt="MCP agent tools">
   </p>
 
 </div>
 
 ---
 
-## 最近在做
+## Current Questline
 
-### Project AIRI
+### Project AIRI / computer-use-mcp
 
-我在 [Project AIRI](https://github.com/moeru-ai/airi) 里主要参与 `computer-use-mcp` 和 desktop / browser automation 相关方向。
+现在最主要的公开线是 [Project AIRI](https://github.com/moeru-ai/airi)。我主要参与 `computer-use-mcp`、desktop/browser automation、coding runner 这几块。
 
-比较常碰的东西：
+这条线关心的不是“模型说它做完了”，而是：
 
-- MCP tool surface：工具注册、schema、权限边界、tool descriptor。
-- Coding runner：completion discipline、verification gate、archive recall、task/workspace memory governance。
-- Desktop / browser automation：Chrome semantic DOM、iframe 坐标、desktop grounding、overlay 状态展示。
-- Execution reliability：approval、audit、trace、recovery、测试矩阵和 live eval。
-
-我不会把它写成“我一个人做了 AIRI 的 computer-use 系统”。更准确的说法是：我在给这条 execution line 补边界、补证据、补测试，让它更像一个能长期维护的东西。
-
-### Campus Copilot / Project Aris
-
-这条线现在不再放成一整篇论文了，保留成项目记录就够。
-
-- 面向校园场景的 AI 助手，核心是“没有数据就不编造”。
-- Azure Functions / Cosmos DB / Next.js / QQ Bot / 多源课表导入。
-- 做过双人格、课表 OCR、流式响应、定时提醒和校园数据接入。
-
-它是我从“做一个能跑的 AI 应用”过渡到“做一个有边界的 AI 系统”的阶段。
-
----
-
-## 我关心的工程问题
-
-- AI Agent 不该只靠 prompt 自觉，关键边界要落到 runtime discipline。
-- 工具调用要能被审计，失败要能复现，恢复路径要能测试。
-- Memory / archive / transcript 这些东西可以进上下文，但不能装成系统指令。
-- Desktop automation 不是“让模型乱点屏幕”，而是 observation、semantic target、OS input、approval 和 rollback 的组合。
-- 一个 PR 只解决一个问题。基线够用就冻结，别把第二个问题域混进去。
-
----
-
-## 当前技术栈
+- 工具调用有没有边界。
+- 执行结果有没有证据。
+- 失败以后能不能恢复。
+- 上下文、记忆、归档会不会反过来污染 prompt。
+- 桌面和浏览器自动化能不能从观察、定位、执行、审计一路闭合。
 
 <table>
 <tr>
 <td width="50%">
 
-**Agent / MCP / Runtime**
+**AIRI execution line**
 
-- TypeScript
-- MCP server / tool schema
-- XState-ish runner discipline
-- Vitest / fixture-first testing
-- Desktop / browser automation
+- MCP tool surface
+- approval / audit / trace
+- coding runner verification gate
+- archive recall discipline
+- task / workspace memory governance
 
 </td>
 <td width="50%">
 
-**App / Cloud**
+**Desktop and browser line**
 
-- Vue / Electron / Vite
+- Chrome semantic DOM bridge
+- iframe coordinate grounding
+- desktop target candidates
+- overlay / ghost pointer state
+- OS input safety boundaries
+
+</td>
+</tr>
+</table>
+
+一句话概括：我在做的是让 AI Agent 的执行链路更硬一点，少一点“模型自己悟了”，多一点 runtime contract。
+
+### Campus Copilot / Project Aris
+
+Campus Copilot 和 Project Aris 仍然保留，但不再占满整个主页。
+
+- 校园 AI 助手，重点是“没有数据就不编造”。
+- Azure Functions / Cosmos DB / Next.js / QQ Bot。
+- 做过课表导入、OCR、双人格、流式响应、定时提醒。
+- 它更像前一个阶段：从能跑的 AI 应用，走向有边界的 AI 系统。
+
+---
+
+## Things I Care About
+
+- AI Agent 不能只靠 prompt 维持纪律。
+- Memory、archive、transcript 可以提供上下文，但不能伪装成系统指令。
+- Desktop automation 不是乱点屏幕，而是 observation、semantic target、OS input、approval、rollback 的组合。
+- 一个 PR 只解决一个问题。基线够用就冻结，别把第二个问题域混进去。
+- 测试不是装饰。不能复现的 bug，迟早会回来。
+
+---
+
+## Toolbox
+
+<table>
+<tr>
+<td width="33%">
+
+**Runtime**
+
+- TypeScript
 - Node.js
+- MCP server
+- xsAI / tool calling
+- Vitest
+
+</td>
+<td width="33%">
+
+**Desktop**
+
+- Electron
+- Vue
+- Eventa IPC
+- Chrome bridge
+- macOS automation
+
+</td>
+<td width="33%">
+
+**Cloud / App**
+
 - Azure Functions
 - Cosmos DB
+- Next.js
 - GitHub Actions
+- QQ Bot
 
 </td>
 </tr>
@@ -100,7 +155,7 @@
 
 ---
 
-## GitHub 状态
+## Status Board
 
 <div align="center">
 
