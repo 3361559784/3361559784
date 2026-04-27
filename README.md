@@ -49,149 +49,242 @@
 
 ---
 
-## 当前方向
+<div align="center">
 
-### 1. Project AIRI / computer-use-mcp
+  <h2>主线 / MAIN TRACK</h2>
+  <p><b>Project AIRI · computer-use-mcp · desktop/browser automation</b></p>
 
-最近主要在 [Project AIRI](https://github.com/moeru-ai/airi) 里做 `computer-use-mcp` 和 desktop / browser automation 相关的改动。
+</div>
 
-这条线大概分成几块：
-
-**Coding runner / context**
-
-- completion report、verification gate、budget exhausted、text-only final 这些收尾问题。
-- transcript projection、archive recall、context budget policy。
-- task memory、workspace memory、evidence pins，主要是防止上下文越写越脏。
-- live eval 和 deterministic regression，避免只靠一次演示说“能跑”。
-
-**Desktop / browser automation**
-
-- Chrome semantic DOM bridge。
-- iframe 坐标修正。
-- desktop grounding / target candidates。
-- overlay、ghost pointer、OS input boundary。
-- Chrome-first 的桌面控制链路。
-
-**MCP tool surface**
-
-- tool schema、tool descriptor、public/internal boundary。
-- approval、audit、trace。
-- request / apply 这类需要分权限的状态变更。
+最近主要在 [Project AIRI](https://github.com/moeru-ai/airi) 里做 `computer-use-mcp`、coding runner、desktop/browser automation 相关改动。
 
 <table>
 <tr>
-<td width="50%">
+<td width="34%" valign="top">
 
-**AIRI execution line**
+<h3>coding runner</h3>
 
-- MCP tool surface
-- approval / audit / trace
-- coding runner verification gate
-- archive recall discipline
-- task / workspace memory governance
+<p>让 coding agent 的收尾、验证、失败恢复更稳定。</p>
+
+<ul>
+  <li>completion report</li>
+  <li>verification gate</li>
+  <li>text-only final recovery</li>
+  <li>budget exhausted classification</li>
+  <li>live eval / deterministic regression</li>
+</ul>
 
 </td>
-<td width="50%">
+<td width="33%" valign="top">
 
-**Desktop and browser line**
+<h3>context / memory</h3>
 
-- Chrome semantic DOM bridge
-- iframe coordinate grounding
-- desktop target candidates
-- overlay / ghost pointer state
-- OS input safety boundaries
+<p>让上下文可以被使用，但不变成新的污染源。</p>
+
+<ul>
+  <li>transcript projection</li>
+  <li>archive recall</li>
+  <li>task memory / evidence pins</li>
+  <li>workspace memory review</li>
+  <li>context budget policy</li>
+</ul>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>desktop / browser</h3>
+
+<p>Chrome-first 的桌面控制链路，偏观察、定位、执行边界。</p>
+
+<ul>
+  <li>Chrome semantic DOM bridge</li>
+  <li>iframe coordinate grounding</li>
+  <li>desktop target candidates</li>
+  <li>overlay / ghost pointer</li>
+  <li>OS input boundary</li>
+</ul>
 
 </td>
 </tr>
 </table>
 
-这部分不往 title 上加戏，按实际贡献写：我主要是在补执行链路里的边界、测试、恢复路径和可审计信息。
-
-### 2. Campus Copilot / Project Aris
-
-Campus Copilot 和 Project Aris 是早一点的完整应用线。现在不再让它们占满整个主页，但还是值得保留。
-
-做过的东西：
-
-- QQ Bot 消息处理。
-- 课表查询和多源导入。
-- OCR 识别课表截图。
-- 双人格和场景切换。
-- Azure Functions / Cosmos DB / Next.js web demo。
-- 流式响应、定时提醒、校园数据接入。
-
-这条线的重点是校园场景和产品闭环。AIRI 这条线更偏执行系统、工具边界和开源协作。
-
-### 3. AI governance
-
-这里说的 governance 不是很大的概念，更多是工程里会直接遇到的问题：
-
-- 哪些内容能进 prompt。
-- 哪些工具能被模型直接调用。
-- 哪些状态必须经过 review / token / host gate。
-- 哪些记录只能当证据，不能当指令。
-- 哪些失败要直接拦住，不能靠模型自己解释过去。
-
-这块我现在不会写太深。先把实际系统里的小边界做好，比先写一套很大的原则更有用。
-
----
-
-## 工程偏好
-
-- 先看代码、测试、日志，再下结论。
-- PR 尽量小，commit 拆清楚。
-- baseline 够用就冻结，不在同一个分支里继续叠无关修补。
-- 文档要跟实现、测试、脚本对得上。
-- 能写 deterministic test 就不要只靠 live demo。
-- Agent 系统要有 failure contract，不然出错以后很难接手。
-
----
-
-## 工具箱
-
 <table>
 <tr>
-<td width="33%">
+<td width="50%" valign="top">
 
-**Runtime**
+<h3>AIRI execution line</h3>
 
-- TypeScript
-- Node.js
-- MCP server
-- xsAI / tool calling
-- Vitest
+我主要补的是执行链路里的边界、测试、恢复路径和可审计信息。这里不写成“独立完成某某系统”，按公开 PR 和实际改动来算。
 
-</td>
-<td width="33%">
-
-**Desktop**
-
-- Electron
-- Vue
-- Eventa IPC
-- Chrome bridge
-- macOS automation
+<ul>
+  <li>MCP tool surface</li>
+  <li>approval / audit / trace</li>
+  <li>runner verification</li>
+  <li>archive / memory discipline</li>
+  <li>test matrix and live checks</li>
+</ul>
 
 </td>
-<td width="33%">
+<td width="50%" valign="top">
 
-**Cloud / App**
+<h3>desktop v3 direction</h3>
 
-- Azure Functions
-- Cosmos DB
-- Next.js
-- GitHub Actions
-- QQ Bot
+现在的桌面线偏 macOS + Chrome-first。目标不是“让模型乱点屏幕”，而是把页面语义、视觉候选、OS 输入和 overlay 状态接起来。
+
+<ul>
+  <li>visual + semantic grounding</li>
+  <li>Chrome bridge lifecycle</li>
+  <li>iframe coordinate hardening</li>
+  <li>overlay input isolation</li>
+  <li>future cursor save / restore discipline</li>
+</ul>
 
 </td>
 </tr>
 </table>
 
 ---
-
-## Status Board
 
 <div align="center">
+
+  <h2>支线 / SIDE PROJECTS</h2>
+  <p><b>Campus Copilot · Project Aris</b></p>
+
+</div>
+
+Campus Copilot 和 Project Aris 是早一点的完整应用线。它们现在不是主页主角，但仍然是我做过的一条比较完整的产品链路。
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>Campus Copilot</h3>
+
+<ul>
+  <li>校园 AI 助手。</li>
+  <li>重点是没有数据时不编造。</li>
+  <li>课表查询和多源导入。</li>
+  <li>OCR 识别课表截图。</li>
+  <li>Next.js web demo。</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>Project Aris / QQ Bot</h3>
+
+<ul>
+  <li>QQ Bot 消息处理。</li>
+  <li>Azure Functions / Cosmos DB。</li>
+  <li>双人格和场景切换。</li>
+  <li>流式响应和定时提醒。</li>
+  <li>校园数据接入。</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+这条线更偏应用层：能不能把一个 AI 产品跑起来、接进真实入口、处理真实用户输入。AIRI 这条线更偏执行系统和开源协作。
+
+---
+
+<div align="center">
+
+  <h2>工程偏好 / ENGINEERING NOTES</h2>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>工作习惯</h3>
+
+<ul>
+  <li>先看代码、测试、日志，再下结论。</li>
+  <li>PR 尽量小，commit 拆清楚。</li>
+  <li>baseline 够用就冻结。</li>
+  <li>文档要跟实现、测试、脚本对得上。</li>
+  <li>能写 deterministic test 就不要只靠 live demo。</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+
+<h3>AI governance</h3>
+
+这里不展开成大理论，只记几个工程边界：
+
+<ul>
+  <li>哪些内容能进 prompt。</li>
+  <li>哪些工具能被模型直接调用。</li>
+  <li>哪些状态必须经过 review / token / host gate。</li>
+  <li>哪些记录只能当证据，不能当指令。</li>
+  <li>哪些失败要直接拦住，不能靠模型自己解释过去。</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+  <h2>工具箱 / TOOLBOX</h2>
+
+</div>
+
+<table>
+<tr>
+<td width="33%">
+
+<h3>Runtime</h3>
+
+<ul>
+  <li>TypeScript</li>
+  <li>Node.js</li>
+  <li>MCP server</li>
+  <li>xsAI / tool calling</li>
+  <li>Vitest</li>
+</ul>
+
+</td>
+<td width="33%">
+
+<h3>Desktop</h3>
+
+<ul>
+  <li>Electron</li>
+  <li>Vue</li>
+  <li>Eventa IPC</li>
+  <li>Chrome bridge</li>
+  <li>macOS automation</li>
+</ul>
+
+</td>
+<td width="33%">
+
+<h3>Cloud / App</h3>
+
+<ul>
+  <li>Azure Functions</li>
+  <li>Cosmos DB</li>
+  <li>Next.js</li>
+  <li>GitHub Actions</li>
+  <li>QQ Bot</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+  <h2>Status Board</h2>
 
   <img src="./profile-summary-card-output/default/0-profile-details.svg" width="100%" alt="profile details" />
 
