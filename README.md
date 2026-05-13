@@ -157,28 +157,28 @@
 <td><b>Area</b></td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1751">#1751</a></td>
-<td>fix(stage-tamagotchi): harden overlay isolation and iframe coordinates</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/1805">#1805</a></td>
+<td>feat(computer-use-mcp): add background desktop scheduler</td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1750">#1750</a></td>
-<td>fix(computer-use-mcp): add macOS display geometry contract</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/1780">#1780</a></td>
+<td>test(computer-use-mcp): add desktop v3 smoke coverage</td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1746">#1746</a></td>
-<td>fix(computer-use-mcp): harden desktop runtime cleanup</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/1779">#1779</a></td>
+<td>docs(computer-use-mcp): define plast-mem bridge contract</td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1742">#1742</a></td>
-<td>test(computer-use-mcp): align transcript projection baseline</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/1778">#1778</a></td>
+<td>test(computer-use-mcp): define planning orchestration contract</td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1734">#1734</a></td>
-<td>feat(computer-use-mcp): add transcript truth source and safe projection</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/1777">#1777</a></td>
+<td>chore(computer-use-mcp): added docs defining mimic baseline training boundary</td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1733">#1733</a></td>
-<td>feat(computer-use-mcp): add read-only DOM tools parity to extension bridge</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/1738">#1738</a></td>
+<td>feat(computer-use-mcp): add terminal screen heuristics</td>
 </tr>
 </table>
 
