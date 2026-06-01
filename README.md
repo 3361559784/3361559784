@@ -157,6 +157,10 @@
 <td><b>Area</b></td>
 </tr>
 <tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1919">#1919</a></td>
+<td>feat(computer-use-mcp): add tool lane hygiene advisory</td>
+</tr>
+<tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1805">#1805</a></td>
 <td>feat(computer-use-mcp): add background desktop scheduler</td>
 </tr>
@@ -175,10 +179,6 @@
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1777">#1777</a></td>
 <td>chore(computer-use-mcp): added docs defining mimic baseline training boundary</td>
-</tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1738">#1738</a></td>
-<td>feat(computer-use-mcp): add terminal screen heuristics</td>
 </tr>
 </table>
 
