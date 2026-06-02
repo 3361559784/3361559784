@@ -157,6 +157,10 @@
 <td><b>Area</b></td>
 </tr>
 <tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/1920">#1920</a></td>
+<td>feat(computer-use-mcp): add browser repair suggestions</td>
+</tr>
+<tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1919">#1919</a></td>
 <td>feat(computer-use-mcp): add tool lane hygiene advisory</td>
 </tr>
@@ -175,10 +179,6 @@
 <tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/1778">#1778</a></td>
 <td>test(computer-use-mcp): define planning orchestration contract</td>
-</tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1777">#1777</a></td>
-<td>chore(computer-use-mcp): added docs defining mimic baseline training boundary</td>
 </tr>
 </table>
 
