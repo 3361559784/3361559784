@@ -164,22 +164,6 @@
 <td><a href="https://github.com/moeru-ai/airi/pull/1919">#1919</a></td>
 <td>feat(computer-use-mcp): add tool lane hygiene advisory</td>
 </tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1805">#1805</a></td>
-<td>feat(computer-use-mcp): add background desktop scheduler</td>
-</tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1780">#1780</a></td>
-<td>test(computer-use-mcp): add desktop v3 smoke coverage</td>
-</tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1779">#1779</a></td>
-<td>docs(computer-use-mcp): define plast-mem bridge contract</td>
-</tr>
-<tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1778">#1778</a></td>
-<td>test(computer-use-mcp): define planning orchestration contract</td>
-</tr>
 </table>
 
 </details>
