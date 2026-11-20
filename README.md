@@ -157,12 +157,12 @@
 <td><b>Area</b></td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1920">#1920</a></td>
-<td>feat(computer-use-mcp): add browser repair suggestions</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/3496">#3496</a></td>
+<td>feat: integrate computer-use MCP, terminal approval, and conversation compact</td>
 </tr>
 <tr>
-<td><a href="https://github.com/moeru-ai/airi/pull/1919">#1919</a></td>
-<td>feat(computer-use-mcp): add tool lane hygiene advisory</td>
+<td><a href="https://github.com/moeru-ai/airi/pull/3473">#3473</a></td>
+<td>fix(mcp): avoid redispatch after tool call failures</td>
 </tr>
 </table>
 
