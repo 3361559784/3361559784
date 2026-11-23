@@ -157,6 +157,10 @@
 <td><b>Area</b></td>
 </tr>
 <tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/3557">#3557</a></td>
+<td>feat(stage-tamagotchi): add a closed Auto approval cage</td>
+</tr>
+<tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/3496">#3496</a></td>
 <td>feat: integrate computer-use MCP, terminal approval, and conversation compact</td>
 </tr>
