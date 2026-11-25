@@ -157,6 +157,10 @@
 <td><b>Area</b></td>
 </tr>
 <tr>
+<td><a href="https://github.com/moeru-ai/airi/pull/3612">#3612</a></td>
+<td>chore: remove retired agent research from the product tree</td>
+</tr>
+<tr>
 <td><a href="https://github.com/moeru-ai/airi/pull/3557">#3557</a></td>
 <td>feat(stage-tamagotchi): add a closed Auto approval cage</td>
 </tr>
